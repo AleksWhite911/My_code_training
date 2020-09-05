@@ -56,7 +56,7 @@ for code in goods.items():
     for a in store[coding]:
         a.values()
         summ = a['quantity'] * a['price']
-        print('Количество товара под названием {0}, код товара - {3} - {1} шт, обшая стоимость на складе {2}'.format(
+        print('Количество товара под названием {0} ( код товара - {3}) - {1} шт, обшая стоимость на складе {2}'.format(
             product, a['quantity'], summ, coding
         ))
 
