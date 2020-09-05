@@ -49,20 +49,10 @@ store = {
 # TODO здесь ваш код
 quantity = 0
 price = 0
-for code in goods.items():
-    product = code[0]
-    coding = code[1]
+for product, coding in goods.items():
     #print(product, coding)
     for a in store[coding]:
-        a.values()
+        #a.values()
         summ = a['quantity'] * a['price']
         print('Количество товара под названием {0} ( код товара - {3}) - {1} шт, обшая стоимость на складе {2}'.format(
-            product, a['quantity'], summ, coding
-        ))
-
-
-
-
-
-
-
+            product, a['quantity'], summ, coding))
